@@ -10,19 +10,17 @@ namespace MyTestProject
         [TestMethod]
         public void TestSearchAreaTriangle()
         {
-            Shape shape = new Shape(new Triangle(3, 4, 5));
-            double area = shape.Search();
             double expected = 6;
-            Assert.AreEqual(expected, area);
+            var shape2 = new Triangle(3, 4, 5);
+            Assert.AreEqual(expected, shape2.SearchArea());
         }
 
         [TestMethod]
         public void TestSearchAreaCircle()
         {
-            Shape shape = new Shape(new Circle(3));
-            double area = shape.Search();
+            var shape1 = new Circle(3);
             double expected = 28.27;
-            Assert.AreEqual(expected, Math.Round(area, 2));
+            Assert.AreEqual(expected, Math.Round(shape1.SearchArea(), 2));
         }
     }
 }

@@ -10,4 +10,9 @@
     <None Remove="MyTestProject\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Db-Test.mdf" />
+    <None Remove="Db-Test_log.ldf" />
+  </ItemGroup>
+
 </Project>
